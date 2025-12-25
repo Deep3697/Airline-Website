@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="SignUpPage.css">
+</head>
+<body >
+    <form>
+        <div class="upper">
+        <div class="register">
+            <div style="margin-bottom: 30px;" ><img src="D:\VS HTML\Swadeshi Airways\swadeshi-airways-high-resolution-logo.png"  height="80px" width="auto" style="margin-left: 25%;"></div>
+            <div id="mainalert" style="height: 0px; width: auto; display: none; "><p id="alertMessage"></p><button id="close_alert"  >X</button></div>
+            <label for="firstname" >Full Name:</label> <br>
+                <input type="text" class="name" id="firstname" placeholder="Firstname">
+                <input type="text" class="name" id="lastname" placeholder="Lastname"><br>
+            <div id="name_alert" class="alert"></div>
+            <label for="birthdate" >Date of birth : </label><br>
+                <input type="date" id="birthdate"><br>
+                <div id="date_alert" class="alert"></div>
+            <label for="gender">Gender : <br>
+                <label for="male">
+                    <input type="radio" class="sex" id="male" name="gender" value="male">
+                Male</label>
+                <label for="female">
+                    <input type="radio" class="sex" id="female" name="gender" value="female">
+                Female</label>
+                <label for="other">
+                    <input type="radio" class="sex" id="other" name="gender" value="other">
+               Other</label>
+            </label><br>
+            <div id="gender_alert" class="alert"></div>
+            <label for="email">Email:</label><br>
+                <input type="email" id="email"><br>
+                <div id="email_alert" class="alert"></div>
+            <label for="phone">Phone number:</label><br>
+                <input type="text" id="phone" ><br>
+                <div id="mob_alert" class="alert"></div>
+            <label for="password">Password:</label><br>
+                <input type="password" id="password"><br>
+                <div id="password_alert" class="alert"></div>
+            <label for="confirmpassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword"><br>
+                <div id="Cpassword_alert" class="alert"></div>
+                <button id="submit">Sign Up</button>
+        </div>
+        </div>
+    </form>
+    <script src="SignUpPage.js"></script>
+</body>
+</html>

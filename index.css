@@ -1,0 +1,455 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#navibar{
+    
+    background-color: #1C2633;
+    margin: 0 auto;
+    min-height: 500px;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.navi-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    background-color:transparent;
+    border: none;
+    font-size: 15px;
+    border-width: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 60px;
+}
+
+.nav:hover{
+    background-color: rgb(81, 101, 126); 
+    border-width: 2px;
+    border-radius: 7px;
+    transform: scale(1.02);
+
+}
+
+.nav:active{
+    background-color: #1C2633;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+}
+
+#save{
+    background-color: #1C2633;color: white;border: none;border-radius: 15px;width: 100%;height: 40px;font-size: large;margin-top: 20px;
+}
+#cancel{
+    background-color: whitesmoke;color: #1C2633;border: none;border-radius: 15px;width: 100%;height: 40px;font-size: large;margin-top: 20px;
+}
+#save:hover{
+    background-color:rgb(81, 101, 126) ;
+    cursor: pointer;
+}
+#save:active{
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}
+#cancel:hover{
+    background-color:grey ;
+    color: white;
+    cursor: pointer;
+}
+#cancel:active{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 28);
+}
+
+#mainalert {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#mainalert p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+#close_alert {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+#close_alert:hover{
+    background-color: rgb(240, 180, 180);
+}
+
+#regionalSetting {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#regionalSetting form {
+    margin-top: 15px;
+}
+
+#regionalSetting select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#regionalSetting label {
+    font-weight: bold;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.earth{
+    height: 35px;
+    margin:0px 0px 0px 0px;
+    margin-left: -20px;
+}
+
+
+#menu_hidden{
+    background-color: transparent;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 999;
+}
+
+
+#profileDropdown {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#profileDropdown button {
+    color: white;
+    background: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+#profileDropdown button:hover {
+    background-color: rgb(81, 101, 126);
+}
+#profileBtn {
+    color: #0170d0; 
+}
+
+
+#profileBtn:hover {
+    color: white; 
+    background-color: rgb(81, 101, 126);
+}
+
+#profileBtn:active {
+    color: white;
+    background-color: #1C2633;
+    border: 2px solid blue;
+}
+.active {
+    background-color: #0170d0 !important;
+    color: white !important;
+}
+
+.card {
+    display: flex; /* Ensure cards are flex by default */
+}
+
+#options{
+    position: absolute;
+    /* display: none; */
+    top: 70px;
+    right: 50px;
+    border: 0px;
+    height: 300px;
+    width: 250px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-size: large;
+    background-color: rgba(52, 58, 118, 0.996);
+    z-index: 1000;
+    box-sizing: border-box;
+    
+}
+
+.ops{
+    width:100%;
+    height:80px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ops:hover{
+    background-color: rgb(217, 217, 224);
+}
+
+option{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+#choose {
+    display: flex;
+    justify-content:center;
+    padding: 90px 0px 0px 30px;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.upfield{
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    z-index: 3;
+    margin-top: 8px;
+    margin-left: 20px;
+    color: rgb(66, 64, 64);
+    font-weight: 900;
+    
+}
+#endspan{
+    margin-left: 15px;
+}
+#start {
+    border: 0px;
+    height: 75px;
+    width: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px 0px 0px 20px;
+    font-size: large;
+    margin-right: 9px;
+}
+
+#end {
+    border: 0px;
+    height: 75px;
+    width: 300px;
+    box-sizing: border-box;
+    margin-left: -24px;
+    padding: 20px 0px 0px 40px;
+    font-size: large;
+    
+
+}
+
+#depart {
+    border: 0px;
+    height: 75px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 20px 0px 0px 20px;
+    font-size: x-large;
+    color:rgba(101, 98, 98, 0.67);
+    /* color: aliceblue; */
+    
+}
+
+#count {
+    border: 0px;
+    height: 75px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px 0px 0px 20px;
+    font-size: large;
+    
+}
+
+#search {
+    border: none;
+    height: 75px;
+    width: 100px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-left: 20px;
+    font-size: large;
+    background-color: #0170d0;
+}#search:hover{
+    background-color: #0105df;
+    cursor: pointer;
+}
+#search:active{
+    border-color:#0105df ;
+    background-color:#0170d0 ;
+    border-style: solid;
+    border-width: 4px;
+}
+
+
+#change{
+    border: 3px solid  rgb(6, 6, 39);
+    position: relative;
+    top:15px;
+    height: 45px;
+    width: 45px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    z-index: 5;
+    margin-left:-34px;
+    /* padding: 20px; */
+    font-size: x-large;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.left-box {
+    width: 25%;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.right-box {
+    width: 75%;
+    padding: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.info .time {
+    font-weight: 600;
+}
+
+.sub {
+    font-size: 13px;
+    color: #666;
+}
+
+.card-right {
+    text-align: right;
+}
+
+.price {
+    font-size: 20px;
+    color: #0071c2;
+    font-weight: 600;
+}
+
+.left-box input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.left-box label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.left-box label:hover {
+    color: #0170d0;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+.book-btn {
+    background-color: #0170d0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #0105df;
+}
+
+.book-btn:active {
+    background-color: #0170d0;
+    border: 2px solid blue;
+}
